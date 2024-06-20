@@ -257,7 +257,47 @@ margin-bottom: 10px; */
     text-align: center;
 } */
 
+.projects > .projects1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.projectItem1 > img {
+    position: relative;
+    left: 8rem;
+}
+
+.projects1 > .projectItem1 > img {
+    width: 5rem;
+    height: 5rem;
+    left: 3rem;
+}
+
+
+.projects > .projectItem > img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.projects > .projectItem > .text > p {
+    text-align: center;
+}
+
+.projectItem  > {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projectItem > .card {
+    flex-direction: column;
+    margin: 3rem 0 2rem 0;
+}
+.projectItem > .card > img{
+    width: 8rem;
+    height: 8rem;
+}
 
 @media screen {
     @media (max-width: 480px) {
