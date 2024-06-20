@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7f2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    /* max-width: 1000px ;
+    min-height: 1000px ; */
+    background-color: #fff;
+    margin: 50px;
+    display: flex;
+}
+
+.container > div {
+    min-width: 0;
+    padding: 20px;
+    /* background-color: lightblue; 
+    text-align: center; Centra el texto para el ejemplo */
+}
+
+.container > div:first-child {
+    flex: 1;
+}
+
+.container > div:last-child {
+    flex: 2;
+}
+
+.container > .leftSide {
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText > .imgProfile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText > .imgProfile > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText > h2 {
+    color: #fff;
+    font-size: 1.3em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText > h2 > span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo {
+    padding-top: 10px;
+}
+
+.title {
+    font-size: 0.8em;
+    color: #a2b5ff;
+    text-transform: uppercase;
+    font-weight: 600;
+    /* letter-spacing: 1px;
+margin-bottom: 10px; */
+}
+
+.contactInfo > ul {
+    position: relative;
+}
+
+.contactInfo > ul > li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo > ul > li > .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contactInfo > ul > li > span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfoEducation li {
+    margin-bottom: 15px;
+}
+
+.contactInfoEducation h5 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactInfoEducation h4 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.language .text {
+    color: #fff;
+}
+
+.language .percentage {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #1100ff;
+    display: block;
+    margin-top: 5px;
+}
+
+.language .percentage div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #fff;
+}
+
+.container > .rightSide {
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rightSide {
+    flex: 2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about,
+.projects {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%;
+    height: 50%; */
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectItem1 {
+    /* width: 15%;
+    height: 15%;
+    background-color: #0088d4;
+    font-size: 1rem;
+    border: solid 1px;
+    margin: 20px; */
+    width: 95%;
+    height: 50%;
+    display: flex;
+    margin: 1.5rem;
+    background-color: #e2f0fc;
+    border-radius: 10px;
+    align-items: center;
+    border: 2px solid #1272b7;
+}
+
+.contenedor-titulo {
+    width: 100%;
+    height: 90%;
+}
+
+.contenedor-titulo > h2 {
+    width: 100%;
+    height: 5%;
+    text-align: center;
+}
+
+.projectItem1 > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.projectItem1 > .text > h4 {
+    position: relative;
+    text-align: center;
+    left: 10rem;
+    margin-bottom: 10px;
+}
+
+.projectItem1 > .text > p {
+    position: relative;
+    text-align: center;
+    left: 10rem;
+    margin-bottom: 15px;
+}
+
+.projectItem1 > .text > h5 {
+    position: relative;
+    text-align: center;
+    left: 10rem;
+    cursor: pointer;
+}
+
+/* .projectItem > h4 {
+    text-align: center;
+} */
+
+.projects > .projects1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projectItem1 > img {
+    position: relative;
+    left: 8rem;
+}
+
+.projects1 > .projectItem1 > img {
+    width: 5rem;
+    height: 5rem;
+    left: 3rem;
+}
+
+
+.projects > .projectItem > img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.projects > .projectItem > .text > p {
+    text-align: center;
+}
+
+.projectItem  > {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projectItem > .card {
+    flex-direction: column;
+    margin: 3rem 0 2rem 0;
+}
+.projectItem > .card > img{
+    width: 8rem;
+    height: 8rem;
+}
+
+@media screen {
+    @media (max-width: 480px) {
+        .contactInfo {
+            /* font-size: 0.8rem; */
+            position: relative;
+            left: -30px;
+            margin-top: 5rem;
+        }
+        .contactInfoEducation {
+            /* font-size: 0.8rem; */
+            position: relative;
+            left: -30px;
+            margin-top: 5rem;
+        }
+        .language {
+            position: relative;
+            left: -30px;
+            margin-top: 5rem;
+        }
+        .leftSide {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .profileText > .imgProfile {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .projectItem1 > img {
+            display: none;
+        }
+        .projectItem1 {
+            width: rem;
+        }
+
+        .projects {
+            width: 11rem;
+        }
+        .projects > .projects1 {
+            width: 10rem;
+        }
+        .text {
+            padding: 1rem;
+        }
+
+        .projectItem1 > .text > h4 {
+            position: relative;
+            left: -10px;
+        }
+        .projectItem1 > .text > p {
+            position: relative;
+            left: -10px;
+        }
+        .projectItem1 > .text > h5 {
+            position: relative;
+            left: -10px;
+        }
+
+        .projects3 > .projectItem3 > img {
+            width: 10rem;
+        }
+    }
+    @media (max-width: 821px) {
+        .projectItem1 > .text > h4 {
+            position: relative;
+            left: -3px;
+        }
+        .projectItem1 > .text > p {
+            position: relative;
+            left: -3px;
+        }
+        .projectItem1 > .text > h5 {
+            position: relative;
+            left: -3px;
+        }
+        .projectItem1 > img {
+            display: none;
+        }
+    }
+    @media (min-width: 1463px){
+     
+         .text{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+        }
+
+   
+    .projectItem1 > .text > p {
+        width: 100%;
+
+    }
+    .referneces{
+        display: flex;
+        align-items: center;
+    }
+    .referneces .refernecesText{
+        width: 100%;
+    }
+ 
+ } 
+}
